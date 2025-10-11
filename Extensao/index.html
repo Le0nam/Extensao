@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Nutrição Saudável</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container mt-4">
+    <div class="header">
+      <h1>Guia de Nutrição Saudável</h1>
+      <p>Orientações personalizadas para suas refeições diárias</p>
+    </div>
+  </div>
+
+  <!-- Sobre o Guia -->
+  <div class="container mt-4">
+    <div class="card p-4">
+      <h4>Sobre o Guia</h4>
+      <p>
+        Este guia oferece orientações personalizadas sobre alimentação saudável,
+        considerando diferentes faixas etárias, condições de saúde e níveis de renda
+        para ajudar você a manter uma dieta equilibrada.
+      </p>
+      <img id="nutricao" src="assets/img.jpg" class="img-fluid rounded" alt="Nutrição Saudável">
+    </div>
+  </div>
+
+  <!-- Seleção de Perfil e Resultado -->
+  <div class="container mt-4">
+    <div class="row g-4">
+      <!-- Formulário -->
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5>Selecione seu perfil</h5>
+          <form id="formPerfil">
+            <div class="mb-3">
+              <label for="faixaEtaria" class="form-label">Faixa Etária</label>
+              <select class="form-select" id="faixaEtaria">
+                <option value="">Escolha sua faixa etária...</optio n>
+                <option value="crianca">Criança (1-12) anos</option>
+                <option value="adolescente">Adolescente (13-17) anos</option>
+                <option value="adulto">Adulto (18-59) anos</option>
+                <option value="idoso">Idoso (60+) anos</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="condicaoSaude" class="form-label">Condição de Saúde</label>
+              <select class="form-select" id="condicaoSaude">
+                <option value="">Escolha sua condição...</option>
+                <option value="saudavel">Saudável</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="hipertensao">Hipertensão</option>
+                <option value="intolerancia">Intolerância Alimentar</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="renda" class="form-label">Nível de Renda</label>
+              <select class="form-select" id="renda">
+                <option value="">Escolha seu nível de renda...</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-success w-100" onclick="mostrarOrientacoes()">
+              Ver Orientações Personalizadas
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Orientações -->
+      <div class="col-md-6">
+        <div class="card p-4 text-center" id="resultado">
+          <h5>Sua orientação nutricional aparecerá aqui</h5>
+          <p>Preencha o formulário ao lado para receber recomendações</p>
+          <img id="maca" src="https://cdn-icons-png.flaticon.com/512/415/415733.png" width="80" alt="Ícone de maçã">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Nutrição Saudável - Todos os direitos reservados</p>
+    <small>Orientações gerais - consulte um nutricionista para acompanhamento personalizado</small>
+  </footer>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
